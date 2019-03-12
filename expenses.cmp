@@ -1,4 +1,5 @@
-<aura:component>
+<aura:component controller="ExpensesController">
+    <aura:handler name="init" action="{!c.doInit}" value="{!this}"/>
         <aura:attribute name="expenses" type="Expense__c[]"/>
         <aura:attribute name="newExpense" type="Expense__c"
          default="{ 'sobjectType': 'Expense__c',
